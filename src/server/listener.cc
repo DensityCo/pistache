@@ -37,6 +37,7 @@ namespace {
         if (g_listen_fd != -1) {
             ::close(g_listen_fd);
             g_listen_fd = -1;
+            exit(1);
         }
     }
 
